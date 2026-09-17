@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+         ===================================================== -->
+
+    <!--
+        UTF-8 permite representar correctamente caracteres
+        como acentos, ñ y símbolos utilizados por la web.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Permite que el layout responda correctamente en móviles,
+        tablets y pantallas de escritorio.
+    -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!--
+        Descripción utilizada por buscadores y otras herramientas
+        para identificar el propósito general del sitio.
+    -->
+    <meta
+        name="description"
+        content="ONYX GUARD SERVICES — Consultoría de sistemas, ciberseguridad, infraestructura, inteligencia tecnológica y soluciones integrales."
+    >
+
+    <!--
+        Impide que algunos navegadores intenten interpretar
+        incorrectamente el contenido enviado por el servidor.
+    -->
+    <meta
+        http-equiv="X-Content-Type-Options"
+        content="nosniff"
+    >
+
+    <!--
+        El servidor web será el encargado de reforzar posteriormente
+        las políticas de seguridad HTTP.
+
+        IMPORTANTE:
+        Esta etiqueta NO sustituye la configuración de seguridad
+        del servidor.
+    -->
+
+    <title>
+        ONYX GUARD SERVICES | Cybersecurity · Systems · Intelligence
+    </title>
+
+    <!-- =====================================================
+         SISTEMA VISUAL
+         ===================================================== -->
+
+    <!--
+        Orden de carga:
+
+        1. reset.css
+           Normaliza los estilos del navegador.
+
+        2. variables.css
+           Contiene nuestro sistema de diseño.
+
+        Posteriormente agregaremos:
+
+        3. layout.css
+           Estructura y distribución.
+
+        4. components.css
+           Componentes visuales reutilizables.
+    -->
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+
+
+    <!-- =====================================================
+         FAVICON
+         =====================================================
+
+         Se habilitará cuando coloquemos el icono definitivo
+         de ONYX en:
+
+         /public/favicon/
+
+         No se referencia todavía para evitar apuntar a un
+         archivo inexistente.
+    -->
+
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         =====================================================
+
+         El header será persistente en toda la navegación.
+
+         Más adelante incorporaremos:
+         - menú responsive
+         - indicador de sección
+         - selector de tema
+         - estado del sistema
+    -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <!-- =================================================
+                 IDENTIDAD DE MARCA
+                 ================================================= -->
+
+            <a
+                href="#home"
+                class="brand"
+                aria-label="ONYX Guard Services — Inicio"
+            >
+
+                <span class="brand-mark" aria-hidden="true">
+                    ◈
+                </span>
+
+                <span class="brand-name">
+                    ONYX
+                </span>
+
+                <span class="brand-subtitle">
+                    GUARD SERVICES
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 NAVEGACIÓN PRINCIPAL
+
+                 aria-label permite identificar este bloque
+                 correctamente para lectores de pantalla.
+                 ================================================= -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Navegación principal"
+            >
+
+                <ul>
+
+                    <li>
+                        <a href="#capabilities">
+                            CAPABILITIES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#security">
+                            SECURITY
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#solutions">
+                            SOLUTIONS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#intelligence">
+                            INTELLIGENCE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            CONTACT
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- =================================================
+                 CONTROLES DEL HEADER
+                 ================================================= -->
+
+            <div class="header-controls">
+
+                <!--
+                    Este botón no tendrá funcionalidad todavía.
+
+                    La lógica para cambiar entre:
+                    - tema oscuro
+                    - tema claro
+
+                    será implementada posteriormente con JavaScript.
+                -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    aria-label="Cambiar tema visual"
+                >
+                    <span aria-hidden="true">
+                        ◐
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+         ===================================================== -->
+
+    <main id="home">
+
+
+        <!-- =================================================
+             HERO
+             =================================================
+
+             Esta es la sección de mayor impacto visual.
+
+             Su propósito no es explicar todos los servicios,
+             sino comunicar rápidamente:
+
+             - quiénes somos
+             - qué hacemos
+             - qué nivel de especialización ofrecemos
+             ================================================= -->
+
+        <section
+            class="hero"
+            aria-labelledby="hero-title"
+        >
+
+            <!--
+                Elementos decorativos.
+
+                Se marcarán como aria-hidden porque son puramente
+                visuales y no contienen información necesaria.
+            -->
+
+            <div
+                class="hero-grid"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-scanline"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="container hero-content">
+
+
+                <!-- =============================================
+                     INDICADOR DE ESTADO
+                     ============================================= -->
+
+                <div
+                    class="system-status"
+                    aria-label="Estado del sistema"
+                >
+
+                    <span
+                        class="status-indicator"
+                        aria-hidden="true"
+                    ></span>
+
+                    <span class="status-label">
+                        ONYX SYSTEM
+                    </span>
+
+                    <span class="status-divider">
+                        //
+                    </span>
+
+                    <span class="status-state">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+
+                <!-- =============================================
+                     TITULAR PRINCIPAL
+                     ============================================= -->
+
+                <h1 id="hero-title">
+
+                    <span class="hero-kicker">
+                        SECURITY · SYSTEMS · INTELLIGENCE
+                    </span>
+
+                    <span class="hero-title-main">
+                        SECURITY IS
+                    </span>
+
+                    <span class="hero-title-accent">
+                        THE ARCHITECTURE.
+                    </span>
+
+                </h1>
+
+
+                <!-- =============================================
+                     PROPUESTA DE VALOR
+                     ============================================= -->
+
+                <p class="hero-description">
+
+                    Diseñamos, protegemos y transformamos
+                    infraestructura tecnológica para organizaciones
+                    que requieren seguridad, continuidad y control.
+
+                </p>
+
+
+                <!-- =============================================
+                     CTA PRINCIPAL
+                     ============================================= -->
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#capabilities"
+                        class="button button-primary"
+                    >
+                        EXPLORE CAPABILITIES
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="button button-secondary"
+                    >
+                        SECURE YOUR SYSTEM
+                    </a>
+
+                </div>
+
+
+                <!-- =============================================
+                     INFORMACIÓN OPERATIVA
+                     =============================================
+
+                     Este bloque será visualmente pequeño y tendrá
+                     una estética similar a una consola / centro
+                     de operaciones.
+
+                     No representa información técnica real todavía.
+                     Es parte de la identidad visual.
+                     ============================================= -->
+
+                <div
+                    class="hero-metadata"
+                    aria-label="Áreas de especialización"
+                >
+
+                    <div class="metadata-item">
+
+                        <span class="metadata-label">
+                            DOMAIN
+                        </span>
+
+                        <span class="metadata-value">
+                            CYBERSECURITY
+                        </span>
+
+                    </div>
+
+
+                    <div class="metadata-item">
+
+                        <span class="metadata-label">
+                            FOCUS
+                        </span>
+
+                        <span class="metadata-value">
+                            INFRASTRUCTURE
+                        </span>
+
+                    </div>
+
+
+                    <div class="metadata-item">
+
+                        <span class="metadata-label">
+                            INTELLIGENCE
+                        </span>
+
+                        <span class="metadata-value">
+                            AI / AUTOMATION
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PLACEHOLDERS DE ARQUITECTURA
+
+             TODAVÍA NO CONTIENEN DISEÑO.
+
+             Los dejamos como referencias semánticas para que
+             la navegación del header ya tenga sus destinos.
+
+             Posteriormente sustituiremos estos bloques por
+             las secciones reales.
+             ================================================= -->
+
+        <section id="capabilities" hidden>
+            <h2>Capabilities</h2>
+        </section>
+
+        <section id="security" hidden>
+            <h2>Security</h2>
+        </section>
+
+        <section id="solutions" hidden>
+            <h2>Solutions</h2>
+        </section>
+
+        <section id="intelligence" hidden>
+            <h2>Intelligence</h2>
+        </section>
+
+        <section id="contact" hidden>
+            <h2>Contact</h2>
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 ONYX GUARD SERVICES
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+
+         Todavía no cargamos ningún JS.
+
+         Cuando llegue el momento utilizaremos:
+
+         <script
+             type="module"
+             src="src/js/main.js"
+         ></script>
+
+         El uso de módulos nos permitirá mantener el código
+         dividido por responsabilidades.
+         ===================================================== -->
+
+</body>
+
+</html>

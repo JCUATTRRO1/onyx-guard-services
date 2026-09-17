@@ -1,4 +1,3 @@
-```css
 /*
  * ============================================================
  * ONYX GUARD SERVICES
@@ -10,7 +9,7 @@
  * Objetivo:
  * - Reducir inconsistencias entre navegadores.
  * - Crear una base predecible para nuestro sistema visual.
- * - Evitar depender de estilos implícitos del navegador.
+ * - Evitar depender de estilos implÃ­citos del navegador.
  */
 
 /* ------------------------------------------------------------
@@ -29,7 +28,7 @@ html {
 
 
 /* ------------------------------------------------------------
- * Eliminamos márgenes y padding predeterminados
+ * Eliminamos mÃ¡rgenes y padding predeterminados
  * ------------------------------------------------------------ */
 
 * {
@@ -126,7 +125,7 @@ button {
  * Accesibilidad
  *
  * Respeta la preferencia del usuario para reducir movimiento.
- * Esto será especialmente importante cuando añadamos
+ * Esto serÃ¡ especialmente importante cuando aÃ±adamos
  * animaciones y efectos visuales tipo cyber-interface.
  * ------------------------------------------------------------ */
 
@@ -145,4 +144,3 @@ button {
         scroll-behavior: auto !important;
     }
 }
-```

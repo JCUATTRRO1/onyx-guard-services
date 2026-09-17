@@ -1,4 +1,3 @@
-```css
 /*
  * ============================================================
  * ONYX GUARD SERVICES
@@ -9,11 +8,11 @@
  * visual de Onyx Guard Services.
  *
  * IMPORTANTE:
- * Los componentes NO deberían definir directamente colores
- * o valores globales que ya existan aquí.
+ * Los componentes NO deberÃ­an definir directamente colores
+ * o valores globales que ya existan aquÃ­.
  *
  * Esto nos permite cambiar la identidad visual desde un
- * único punto.
+ * Ãºnico punto.
  */
 
 
@@ -49,9 +48,9 @@
     --color-text-muted: #6f7982;
 
     /* --------------------------------------------------------
-     * Acentos tecnológicos
+     * Acentos tecnolÃ³gicos
      *
-     * El verde se utilizará como indicador de actividad,
+     * El verde se utilizarÃ¡ como indicador de actividad,
      * seguridad y estados positivos.
      * -------------------------------------------------------- */
 
@@ -61,7 +60,7 @@
     /* --------------------------------------------------------
      * Segundo acento
      *
-     * Utilizado para elementos de información tecnológica.
+     * Utilizado para elementos de informaciÃ³n tecnolÃ³gica.
      * -------------------------------------------------------- */
 
     --color-electric-cyan: #00d9ff;
@@ -86,7 +85,7 @@
 
 
     /* ========================================================
-     * 2. TIPOGRAFÍA
+     * 2. TIPOGRAFÃA
      * ======================================================== */
 
     /*
@@ -113,7 +112,7 @@
 
 
     /* ========================================================
-     * 3. ESCALA TIPOGRÁFICA
+     * 3. ESCALA TIPOGRÃFICA
      * ======================================================== */
 
     --text-xs: 0.75rem;
@@ -229,7 +228,7 @@
  * No modificamos componentes individualmente.
  * Solo cambiamos las variables.
  *
- * Más adelante JavaScript controlará la selección del tema.
+ * MÃ¡s adelante JavaScript controlarÃ¡ la selecciÃ³n del tema.
  * ============================================================ */
 
 [data-theme="light"] {
@@ -261,4 +260,3 @@
     --shadow-lg:
         0 24px 64px rgba(0, 0, 0, 0.16);
 }
-```
