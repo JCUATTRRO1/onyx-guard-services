@@ -1,0 +1,148 @@
+```css
+/*
+ * ============================================================
+ * ONYX GUARD SERVICES
+ * RESET CSS
+ * ============================================================
+ *
+ * Normaliza los estilos que los navegadores aplican por defecto.
+ *
+ * Objetivo:
+ * - Reducir inconsistencias entre navegadores.
+ * - Crear una base predecible para nuestro sistema visual.
+ * - Evitar depender de estilos implícitos del navegador.
+ */
+
+/* ------------------------------------------------------------
+ * Box sizing
+ * ------------------------------------------------------------ */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* ------------------------------------------------------------
+ * Eliminamos márgenes y padding predeterminados
+ * ------------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------
+ * Comportamiento general del documento
+ * ------------------------------------------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+/* ------------------------------------------------------------
+ * Elementos multimedia
+ * ------------------------------------------------------------ */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ------------------------------------------------------------
+ * Formularios y elementos interactivos
+ * ------------------------------------------------------------ */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* ------------------------------------------------------------
+ * Enlaces
+ * ------------------------------------------------------------ */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------
+ * Listas
+ * ------------------------------------------------------------ */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* ------------------------------------------------------------
+ * Encabezados
+ * ------------------------------------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: inherit;
+}
+
+
+/* ------------------------------------------------------------
+ * Botones
+ * ------------------------------------------------------------ */
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------
+ * Accesibilidad
+ *
+ * Respeta la preferencia del usuario para reducir movimiento.
+ * Esto será especialmente importante cuando añadamos
+ * animaciones y efectos visuales tipo cyber-interface.
+ * ------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+```
